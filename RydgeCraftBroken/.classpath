@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="RydgeCraft/src/rydgeCrakerStudios/rydgecraft/opengl"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/ALL NON-SYSTEM FILES/Programming/Android/Workspace/RydgeCraft/src/rydgeCrakerStudios/rydgecraft/opengl/luaj-jme-3.0-alpha1.jar"/>
+	<classpathentry kind="lib" path="C:/ALL NON-SYSTEM FILES/Programming/Android/Workspace/RydgeCraft/src/rydgeCrakerStudios/rydgecraft/opengl/luaj-jse-3.0-alpha1.jar"/>
+	<classpathentry kind="lib" path="C:/ALL NON-SYSTEM FILES/Programming/Android/Workspace/RydgeCraft/src/rydgeCrakerStudios/rydgecraft/opengl/luaj-sources-3.0-alpha1.jar"/>
+	<classpathentry kind="lib" path="C:/ALL NON-SYSTEM FILES/Programming/Android/Workspace/RydgeCraft/src/rydgeCrakerStudios/rydgecraft/opengl/lwjgl.jar"/>
+	<classpathentry kind="lib" path="C:/ALL NON-SYSTEM FILES/Programming/Android/Workspace/RydgeCraft/src/rydgeCrakerStudios/rydgecraft/opengl/lwjgl_util.jar"/>
+	<classpathentry kind="lib" path="C:/ALL NON-SYSTEM FILES/Programming/Android/Workspace/RydgeCraft/src/rydgeCrakerStudios/rydgecraft/opengl/PNGDecoder.jar"/>
+	<classpathentry kind="lib" path="C:/ALL NON-SYSTEM FILES/Programming/Android/Workspace/RydgeCraft/src/rydgeCrakerStudios/rydgecraft/opengl/slick.jar"/>
+	<classpathentry kind="lib" path="C:/ALL NON-SYSTEM FILES/Programming/Android/Workspace/RydgeCraft/src/rydgeCrakerStudios/rydgecraft/opengl/slick-util.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

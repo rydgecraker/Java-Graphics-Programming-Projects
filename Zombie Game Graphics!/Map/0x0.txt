@@ -1,0 +1,15 @@
+Wall 0 0 10 500
+Wall 0 490 500 10
+Wall 490 0 10 230
+Wall 490 270 10 230
+Wall 0 0 230 10
+Wall 270 0 230 10
+NextFrame 495 230 5 40 1 1
+NextFrame 230 0 40 5 5 0
+Building 10 10 20 60
+Building 30 10 20 50
+Building 50 10 20 60
+Door 29 60 21 5 1
+NPC 400 400 10 10 1
+NPC 375 50 10 10 2
+Player 40 400 10 10

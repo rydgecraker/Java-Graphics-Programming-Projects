@@ -1,0 +1,961 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x0000000000000000, pid=9952, tid=1736
+#
+# JRE version: Java(TM) SE Runtime Environment (7.0_51-b13) (build 1.7.0_51-b13)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.51-b03 mixed mode windows-amd64 compressed oops)
+# Problematic frame:
+# C  0x0000000000000000
+#
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000244d800):  JavaThread "main" [_thread_in_Java, id=1736, stack(0x0000000002780000,0x0000000002880000)]
+
+siginfo: ExceptionCode=0xc0000005, ExceptionInformation=0x0000000000000008 0x0000000000000000
+
+Registers:
+RAX=0x0000000000000000, RBX=0x000000077cdadb88, RCX=0x000000000244d800, RDX=0x000000005b675e48
+RSP=0x000000000287e878, RBP=0x000000000287e8e8, RSI=0x000000077cdab700, RDI=0x0000000020000020
+R8 =0x000000000244d801, R9 =0x000000000254fcc0, R10=0x0000000000000000, R11=0x0000000000000000
+R12=0x0000000000000000, R13=0x000000077cdadb88, R14=0x000000000287e900, R15=0x000000000244d800
+RIP=0x0000000000000000, EFLAGS=0x0000000000010246
+
+Top of Stack: (sp=0x000000000287e878)
+0x000000000287e878:   0000000002892f77 000000000287e898
+0x000000000287e888:   000000000244d800 000000000287e950
+0x000000000287e898:   000000077cdb22ff 000000000244d800
+0x000000000287e8a8:   000000000287e8a8 000000077cdadb88
+0x000000000287e8b8:   000000000287e900 000000077cdbdea8
+0x000000000287e8c8:   0000000000000000 000000077cdadb88
+0x000000000287e8d8:   0000000000000000 000000000287e908
+0x000000000287e8e8:   000000000287e948 00000000028860f8
+0x000000000287e8f8:   0000000000000000 0000000000000000
+0x000000000287e908:   000000000287e908 000000077cdb2302
+0x000000000287e918:   000000000287e950 000000077cdbdea8
+0x000000000287e928:   0000000000000000 000000077cdb2308
+0x000000000287e938:   000000000287e908 000000000287e958
+0x000000000287e948:   000000000287ea30 000000000288061a
+0x000000000287e958:   0000000000000000 0000000000000000
+0x000000000287e968:   0000000000000000 0000000000000000 
+
+Instructions: (pc=0x0000000000000000)
+0xffffffffffffffe0:   
+
+
+Register to memory mapping:
+
+RAX=0x0000000000000000 is an unknown value
+RBX=0x000000077cdadb88 is an oop
+{method} 
+ - klass: {other class}
+RCX=0x000000000244d800 is a thread
+RDX=0x000000005b675e48 is an unknown value
+RSP=0x000000000287e878 is pointing into the stack for thread: 0x000000000244d800
+RBP=0x000000000287e8e8 is pointing into the stack for thread: 0x000000000244d800
+RSI=0x000000077cdab700 is an oop
+{constant pool} 
+ - klass: {other class}
+ - holder: 0x000000077cdb96a0
+ - cache: 0x000000077cdbdea8
+ -   1 :  : 255.000000
+ -   2 :  : "" {0xd5e074f8}
+ -   3 :  : "Assertion (winGraphicsConfig != null) failed" {0xd61e6c98}
+ -   4 :  : "Screen number: " {0xd61e6d18}
+ -   5 :  : "The value of opacity should be in the range [0.0f .. 1.0f]." {0xd61e6d60}
+ -   6 :  : "Translucent window painter is null in updateWindow" {0xd61e6e00}
+ -   7 :  : "activeWindow" {0xd61e6e90}
+ -   8 :  : "active_windows_list" {0xd61e6a78}
+ -   9 :  : "guidisposed" {0xd5f523c8}
+ -  10 :  : "sun.awt.windows.WWindowPeer" {0xd5ff32e8}
+ -  11 :  : "sun.awt.windows.screen.WWindowPeer" {0xd61e6960}
+ -  12 :  : ''
+ -  13 :  : '()F'
+ -  14 :  : '()I'
+ -  15 :  : '()J'
+ -  16 :  : '()Ljava/lang/String;'
+ -  17 :  : '()V'
+ -  18 :  : '()Z'
+ -  19 :  : '()[I'
+ -  20 :  : '()[J'
+ -  21 :  : '(F)V'
+ -  22 :  : '(I)V'
+ -  23 :  : '(I)Z'
+ -  24 :  : '(II)V'
+ -  25 :  : '(IIII)V'
+ -  26 :  : '(IIIII)V'
+ -  27 :  : '(Ljava/lang/Object;)Ljava/lang/Object;'
+ -  28 :  : '(Ljava/lang/Object;)Z'
+ -  29 :  : '(Ljava/lang/String;)V'
+ -  30 :  : '(Z)V'
+ -  31 :  : '(Z)Z'
+ -  32 :  : '([III)V'
+ -  33 :  : '([III[III)V'
+ -  34 :  : '<clinit>'
+ -  35 :  : '<init>'
+ -  36 :  : 'ACTIVE_WINDOWS_KEY'
+ -  37 :  : 'Assertion (winGraphicsConfig != null) failed'
+ -  38 :  : 'Code'
+ -  39 :  : 'F'
+ -  40 :  : 'I'
+ -  41 :  : 'InnerClasses'
+ -  42 :  : 'Ljava/lang/Object;'
+ -  43 :  : 'Ljava/lang/StringBuffer;'
+ -  44 :  : 'MOUSE_EVENT'
+ -  45 :  : 'NORMAL'
+ -  46 :  : 'Screen number: '
+ -  47 :  : 'StackMapTable'
+ -  48 :  : 'The value of opacity should be in the range [0.0f .. 1.0f].'
+ -  49 :  : 'Translucent window painter is null in updateWindow'
+ -  50 :  : 'Type'
+ -  51 :  : 'Z'
+ -  52 :  : '[J'
+ -  53 :  : '[Ljava/awt/Component;'
+ -  54 :  : '[Ljava/awt/GraphicsDevice;'
+ -  55 :  : '_setResizable'
+ -  56 :  : '_setTitle'
+ -  57 :  : '_toFront'
+ -  58 :  : 'access$200'
+ -  59 :  : 'access$300'
+ -  60 :  : 'access$400'
+ -  61 :  : 'activeWindow'
+ -  62 :  : 'activeWindowListener'
+ -  63 :  : 'active_windows_list'
+ -  64 :  : 'add'
+ -  65 :  : 'addDisplayChangedListener'
+ -  66 :  : 'addPropertyChangeListener'
+ -  67 :  : 'addWindowListener'
+ -  68 :  : 'append'
+ -  69 :  : 'applyShape'
+ -  70 :  : 'blockWindow'
+ -  71 :  : 'create'
+ -  72 :  : 'createAwtWindow'
+ -  73 :  : 'createInstance'
+ -  74 :  : 'defaultFont'
+ -  75 :  : 'displayChanged'
+ -  76 :  : 'disposeImpl'
+ -  77 :  : 'draggedToNewScreen'
+ -  78 :  : 'executeOnEventHandlerThread'
+ -  79 :  : 'fine'
+ -  80 :  : 'finer'
+ -  81 :  : 'flush'
+ -  82 :  : 'focusAllowedFor'
+ -  83 :  : 'get'
+ -  84 :  : 'getActiveWindowHandles'
+ -  85 :  : 'getAppContext'
+ -  86 :  : 'getAppropriateGraphicsConfiguration'
+ -  87 :  : 'getBackBuffer'
+ -  88 :  : 'getComponentAccessor'
+ -  89 :  : 'getComponents'
+ -  90 :  : 'getCurrentKeyboardFocusManager'
+ -  91 :  : 'getData'
+ -  92 :  : 'getDefaultConfiguration'
+ -  93 :  : 'getDefaultScreenDevice'
+ -  94 :  : 'getDevice'
+ -  95 :  : 'getFont'
+ -  96 :  : 'getGraphics'
+ -  97 :  : 'getGraphicsConfiguration'
+ -  98 :  : 'getHWnd'
+ -  99 :  : 'getHeight'
+ - 100 :  : 'getID'
+ - 101 :  : 'getIconImages'
+ - 102 :  : 'getInsets'
+ - 103 :  : 'getInstance'
+ - 104 :  : 'getLocalGraphicsEnvironment'
+ - 105 :  : 'getLogger'
+ - 106 :  : 'getMinimumSize'
+ - 107 :  : 'getOpacity'
+ - 108 :  : 'getPeer'
+ - 109 :  : 'getScaledIconData'
+ - 110 :  : 'getScreenDevices'
+ - 111 :  : 'getScreenImOn'
+ - 112 :  : 'getShape'
+ - 113 :  : 'getStateLock'
+ - 114 :  : 'getSysIconHeight'
+ - 115 :  : 'getSysIconWidth'
+ - 116 :  : 'getSysMinHeight'
+ - 117 :  : 'getSysMinWidth'
+ - 118 :  : 'getSysSmIconHeight'
+ - 119 :  : 'getSysSmIconWidth'
+ - 120 :  : 'getTarget'
+ - 121 :  : 'getToolkit'
+ - 122 :  : 'getTranslucentGraphics'
+ - 123 :  : 'getTreeLock'
+ - 124 :  : 'getType'
+ - 125 :  : 'getWarningString'
+ - 126 :  : 'getWidth'
+ - 127 :  : 'getWindowAccessor'
+ - 128 :  : 'grab'
+ - 129 :  : 'guiDisposedListener'
+ - 130 :  : 'guidisposed'
+ - 131 :  : 'hasWarningWindow'
+ - 132 :  : 'height'
+ - 133 :  : 'hide'
+ - 134 :  : 'initActiveWindowsTracking'
+ - 135 :  : 'initIDs'
+ - 136 :  : 'initialize'
+ - 137 :  : 'insets'
+ - 138 :  : 'insets_'
+ - 139 :  : 'isAlwaysOnTop'
+ - 140 :  : 'isAlwaysOnTopSupported'
+ - 141 :  : 'isEnabled'
+ - 142 :  : 'isFocusableWindow'
+ - 143 :  : 'isLoggable'
+ - 144 :  : 'isMinimumSizeSet'
+ - 145 :  : 'isModalBlocked'
+ - 146 :  : 'isOpaque'
+ - 147 :  : 'isTargetUndecorated'
+ - 148 :  : 'isTranslucencyCapable'
+ - 149 :  : 'isVisible'
+ - 150 :  : 'isVistaOS'
+ - 151 :  : 'isWindowOpacitySupported'
+ - 152 :  : 'isWindowTranslucencySupported'
+ - 153 :  : 'java/awt/AWTEvent'
+ - 154 :  : 'java/awt/AWTEventMulticaster'
+ - 155 :  : 'java/awt/Component'
+ - 156 :  : 'java/awt/Container'
+ - 157 :  : 'java/awt/Dialog'
+ - 158 :  : 'java/awt/Dimension'
+ - 159 :  : 'java/awt/Font'
+ - 160 :  : 'java/awt/Graphics'
+ - 161 :  : 'java/awt/GraphicsConfiguration'
+ - 162 :  : 'java/awt/GraphicsEnvironment'
+ - 163 :  : 'java/awt/Image'
+ - 164 :  : 'java/awt/KeyboardFocusManager'
+ - 165 :  : 'java/awt/Shape'
+ - 166 :  : 'java/awt/Window'
+ - 167 :  : 'java/awt/Window$Type'
+ - 168 :  : 'java/awt/event/WindowEvent'
+ - 169 :  : 'java/awt/event/WindowListener'
+ - 170 :  : 'java/awt/image/DataBufferInt'
+ - 171 :  : 'java/awt/peer/ComponentPeer'
+ - 172 :  : 'java/awt/peer/WindowPeer'
+ - 173 :  : 'java/lang/IllegalArgumentException'
+ - 174 :  : 'java/lang/Object'
+ - 175 :  : 'java/lang/StringBuffer'
+ - 176 :  : 'java/lang/StringBuilder'
+ - 177 :  : 'java/lang/Throwable'
+ - 178 :  : 'java/util/LinkedList'
+ - 179 :  : 'java/util/List'
+ - 180 :  : 'log'
+ - 181 :  : 'modalBlocker'
+ - 182 :  : 'modalDisable'
+ - 183 :  : 'modalEnable'
+ - 184 :  : 'nativeGrab'
+ - 185 :  : 'nativeUngrab'
+ - 186 :  : 'opacity'
+ - 187 :  : 'paint'
+ - 188 :  : 'painter'
+ - 189 :  : 'paletteChanged'
+ - 190 :  : 'preCreate'
+ - 191 :  : 'preprocessPostEvent'
+ - 192 :  : 'print'
+ - 193 :  : 'put'
+ - 194 :  : 'realShow'
+ - 195 :  : 'remove'
+ - 196 :  : 'removeDisplayChangedListener'
+ - 197 :  : 'removeWindowListener'
+ - 198 :  : 'replaceSurfaceDataLater'
+ - 199 :  : 'replaceSurfaceDataRecursively'
+ - 200 :  : 'repositionSecurityWarning'
+ - 201 :  : 'requestWindowFocus'
+ - 202 :  : 'reshapeFrame'
+ - 203 :  : 'screenLog'
+ - 204 :  : 'setAlwaysOnTop'
+ - 205 :  : 'setAlwaysOnTopNative'
+ - 206 :  : 'setBackground'
+ - 207 :  : 'setBounds'
+ - 208 :  : 'setClip'
+ - 209 :  : 'setFocusableWindow'
+ - 210 :  : 'setFont'
+ - 211 :  : 'setFullScreenExclusiveModeState'
+ - 212 :  : 'setGraphicsConfiguration'
+ - 213 :  : 'setIconImagesData'
+ - 214 :  : 'setMinSize'
+ - 215 :  : 'setModalBlocked'
+ - 216 :  : 'setOpacity'
+ - 217 :  : 'setOpaque'
+ - 218 :  : 'setOpaqueImpl'
+ - 219 :  : 'setResizable'
+ - 220 :  : 'setShape'
+ - 221 :  : 'setTitle'
+ - 222 :  : 'shouldClearRectBeforePaint'
+ - 223 :  : 'show'
+ - 224 :  : 'size'
+ - 225 :  : 'sun.awt.windows.WWindowPeer'
+ - 226 :  : 'sun.awt.windows.screen.WWindowPeer'
+ - 227 :  : 'sun/awt/AWTAccessor'
+ - 228 :  : 'sun/awt/AWTAccessor$ComponentAccessor'
+ - 229 :  : 'sun/awt/AWTAccessor$WindowAccessor'
+ - 230 :  : 'sun/awt/AppContext'
+ - 231 :  : 'sun/awt/CausedFocusEvent'
+ - 232 :  : 'sun/awt/CausedFocusEvent$Cause'
+ - 233 :  : 'sun/awt/DisplayChangedListener'
+ - 234 :  : 'sun/awt/SunToolkit'
+ - 235 :  : 'sun/awt/Win32GraphicsConfig'
+ - 236 :  : 'sun/awt/Win32GraphicsDevice'
+ - 237 :  : 'sun/awt/Win32GraphicsEnvironment'
+ - 238 :  : 'sun/awt/windows/TranslucentWindowPainter'
+ - 239 :  : 'sun/awt/windows/WComponentPeer'
+ - 240 :  : 'sun/awt/windows/WFileDialogPeer'
+ - 241 :  : 'sun/awt/windows/WPanelPeer'
+ - 242 :  : 'sun/awt/windows/WPrintDialogPeer'
+ - 243 :  : 'sun/awt/windows/WWindowPeer'
+ - 244 :  : 'sun/awt/windows/WWindowPeer$1'
+ - 245 :  : 'sun/awt/windows/WWindowPeer$ActiveWindowListener'
+ - 246 :  : 'sun/awt/windows/WWindowPeer$GuiDisposedListener'
+ - 247 :  : 'sun/java2d/pipe/Region'
+ - 248 :  : 'sun/util/logging/PlatformLogger'
+ - 249 :  : 'sysH'
+ - 250 :  : 'sysW'
+ - 251 :  : 'sysX'
+ - 252 :  : 'sysY'
+ - 253 :  : 'target'
+ - 254 :  : 'targetToAppContext'
+ - 255 :  : 'toBack'
+ - 256 :  : 'toFront'
+ - 257 :  : 'toString'
+ - 258 :  : 'unblockWindow'
+ - 259 :  : 'ungrab'
+ - 260 :  : 'updateAlwaysOnTopState'
+ - 261 :  : 'updateFocusableWindowState'
+ - 262 :  : 'updateGC'
+ - 263 :  : 'updateIconImages'
+ - 264 :  : 'updateInsets'
+ - 265 :  : 'updateMinimumSize'
+ - 266 :  : 'updateWindow'
+ - 267 :  : 'updateWindowImpl'
+ - 268 :  : 'width'
+ - 269 :  : 'winGraphicsConfig'
+ - 270 :  : 'windowClosing'
+ - 271 :  : 'windowIconified'
+ - 272 :  : 'windowListener'
+ - 273 :  : 'windowType'
+ - 274 :  : '[J'
+ - 275 :  : '[Ljava/awt/Component;'
+ - 276 :  : '[Ljava/awt/GraphicsDevice;'
+ - 277 :  : 'java/awt/AWTEvent'
+ - 278 :  : 'java/awt/AWTEventMulticaster'
+ - 279 :  : 'java/awt/Component'
+ - 280 :  : 'java/awt/Container'
+ - 281 :  : 'java/awt/Dialog'
+ - 282 :  : 'java/awt/Dimension'
+ - 283 :  : 'java/awt/Font'
+ - 284 :  : 'java/awt/Graphics'
+ - 285 :  : 'java/awt/GraphicsConfiguration'
+ - 286 :  : 'java/awt/GraphicsEnvironment'
+ - 287 :  : 'java/awt/Image'
+ - 288 :  : 'java/awt/KeyboardFocusManager'
+ - 289 :  : 'java/awt/Shape'
+ - 290 :  : 'java/awt/Window'
+ - 291 :  : 'java/awt/Window$Type'
+ - 292 :  : 'java/awt/event/WindowEvent'
+ - 293 :  : 'java/awt/event/WindowListener'
+ - 294 :  : 'java/awt/image/DataBufferInt'
+ - 295 :  : 'java/awt/peer/ComponentPeer'
+ - 296 :  : 'java/awt/peer/WindowPeer'
+ - 297 :  : 'java/lang/IllegalArgumentException'
+ - 298 :  : 'java/lang/Object'
+ - 299 :  : 'java/lang/StringBuffer' {0x7c87dea8}
+ - 300 :  : 'java/lang/StringBuilder'
+ - 301 :  : 'java/lang/Throwable'
+ - 302 :  : 'java/util/LinkedList'
+ - 303 :  : 'java/util/List'
+ - 304 :  : 'sun/awt/AWTAccessor'
+ - 305 :  : 'sun/awt/AWTAccessor$ComponentAccessor'
+ - 306 :  : 'sun/awt/AWTAccessor$WindowAccessor'
+ - 307 :  : 'sun/awt/AppContext'
+ - 308 :  : 'sun/awt/CausedFocusEvent'
+ - 309 :  : 'sun/awt/CausedFocusEvent$Cause'
+ - 310 :  : 'sun/awt/DisplayChangedListener'
+ - 311 :  : 'sun/awt/SunToolkit'
+ - 312 :  : 'sun/awt/Win32GraphicsConfig'
+ - 313 :  : 'sun/awt/Win32GraphicsDevice'
+ - 314 :  : 'sun/awt/Win32GraphicsEnvironment'
+ - 315 :  : 'sun/awt/windows/TranslucentWindowPainter'
+ - 316 :  : 'sun/awt/windows/WComponentPeer'
+ - 317 :  : 'sun/awt/windows/WFileDialogPeer'
+ - 318 :  : 'sun/awt/windows/WPanelPeer'
+ - 319 :  : 'sun/awt/windows/WPrintDialogPeer'
+ - 320 :  : 'sun/awt/windows/WWindowPeer' {0x7cdb96a0}
+ - 321 :  : 'sun/awt/windows/WWindowPeer$1'
+ - 322 :  : 'sun/awt/windows/WWindowPeer$ActiveWindowListener' {0x7cdc51e8}
+ - 323 :  : 'sun/awt/windows/WWindowPeer$GuiDisposedListener' {0x7cdc5db0}
+ - 324 :  : 'sun/java2d/pipe/Region'
+ - 325 :  : 'sun/util/logging/PlatformLogger' {0x7cab4b68}
+ - 326 :  : 'Ljava/awt/Font;'
+ - 327 :  : 'Ljava/awt/Insets;'
+ - 328 :  : 'Ljava/awt/Window$Type;'
+ - 329 :  : 'Ljava/awt/event/WindowListener;'
+ - 330 :  : 'Ljava/beans/PropertyChangeListener;'
+ - 331 :  : 'Lsun/awt/CausedFocusEvent$Cause;'
+ - 332 :  : 'Lsun/awt/Win32GraphicsConfig;'
+ - 333 :  : 'Lsun/awt/windows/TranslucentWindowPainter;'
+ - 334 :  : 'Lsun/awt/windows/WWindowPeer;'
+ - 335 :  : 'Lsun/util/logging/PlatformLogger;'
+ - 336 :  : '(Ljava/awt/AWTEvent;)V'
+ - 337 :  : '(Ljava/awt/Color;)V'
+ - 338 :  : '()[Ljava/awt/Component;'
+ - 339 :  : '(Ljava/awt/Component;)V'
+ - 340 :  : '(Ljava/awt/Dialog;)V'
+ - 341 :  : '(Ljava/awt/Dialog;J)V'
+ - 342 :  : '(Ljava/awt/Dialog;Z)V'
+ - 343 :  : '()Ljava/awt/Dimension;'
+ - 344 :  : '()Ljava/awt/Font;'
+ - 345 :  : '(Ljava/awt/Font;)V'
+ - 346 :  : '()Ljava/awt/Graphics;'
+ - 347 :  : '(Ljava/awt/Graphics;)V'
+ - 348 :  : '()Ljava/awt/GraphicsConfiguration;'
+ - 349 :  : '(Ljava/awt/GraphicsConfiguration;)Z'
+ - 350 :  : '()Ljava/awt/GraphicsDevice;'
+ - 351 :  : '()[Ljava/awt/GraphicsDevice;'
+ - 352 :  : '()Ljava/awt/GraphicsEnvironment;'
+ - 353 :  : '(Z)Ljava/awt/Image;'
+ - 354 :  : '()Ljava/awt/Insets;'
+ - 355 :  : '(Ljava/awt/Insets;)V'
+ - 356 :  : '()Ljava/awt/KeyboardFocusManager;'
+ - 357 :  : '()Ljava/awt/Shape;'
+ - 358 :  : '(Ljava/awt/Shape;)V'
+ - 359 :  : '()Ljava/awt/Toolkit;'
+ - 360 :  : '(Ljava/awt/Window;)V'
+ - 361 :  : '(Ljava/awt/Window;I)V'
+ - 362 :  : '()Ljava/awt/Window$Type;'
+ - 363 :  : '(Ljava/awt/event/WindowEvent;)V'
+ - 364 :  : '(Ljava/awt/event/WindowListener;)V'
+ - 365 :  : '()Ljava/awt/peer/ComponentPeer;'
+ - 366 :  : '()Ljava/beans/PropertyChangeListener;'
+ - 367 :  : '()Ljava/lang/Object;'
+ - 368 :  : '(I)Ljava/lang/Object;'
+ - 369 :  : '()Ljava/lang/StringBuffer;'
+ - 370 :  : '(I)Ljava/lang/StringBuilder;'
+ - 371 :  : '()Ljava/util/List;'
+ - 372 :  : '()Lsun/awt/AWTAccessor$ComponentAccessor;'
+ - 373 :  : '()Lsun/awt/AWTAccessor$WindowAccessor;'
+ - 374 :  : '()Lsun/awt/AppContext;'
+ - 375 :  : '(Lsun/awt/CausedFocusEvent$Cause;)Z'
+ - 376 :  : '(Lsun/awt/DisplayChangedListener;)V'
+ - 377 :  : '(Lsun/awt/windows/WComponentPeer;)V'
+ - 378 :  : '(Lsun/awt/windows/WWindowPeer;)V'
+ - 379 :  : '(Lsun/awt/windows/WWindowPeer$1;)V'
+ - 380 :  : '(Lsun/java2d/pipe/Region;)V'
+ - 381 :  : '()Lsun/util/logging/PlatformLogger;'
+ - 382 :  : '(Ljava/awt/Component;Ljava/awt/GraphicsConfiguration;)V'
+ - 383 :  : '(Ljava/awt/GraphicsConfiguration;)Ljava/awt/GraphicsConfiguration;'
+ - 384 :  : '(Ljava/awt/Window;)Ljava/awt/Shape;'
+ - 385 :  : '(Ljava/util/List;II)Ljava/awt/image/DataBufferInt;'
+ - 386 :  : '(Ljava/lang/String;Ljava/beans/PropertyChangeListener;)V'
+ - 387 :  : '(Ljava/lang/Object;Ljava/lang/Runnable;)V'
+ - 388 :  : '(Ljava/lang/String;)Ljava/lang/StringBuilder;'
+ - 389 :  : '(Ljava/lang/Object;)Lsun/awt/AppContext;'
+ - 390 :  : '(Lsun/awt/windows/WWindowPeer;)Lsun/awt/windows/TranslucentWindowPainter;'
+ - 391 :  : '(Ljava/lang/String;)Lsun/util/logging/PlatformLogger;'
+ - 392 :  : '(Ljava/awt/event/WindowListener;Ljava/awt/event/WindowListener;)Ljava/awt/event/WindowListener;'
+ - 393 :  : '(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;'
+ - 394 :  : '(Ljava/awt/Shape;Ljava/awt/geom/AffineTransform;)Lsun/java2d/pipe/Region;'
+ - 395 :  : name_index=186 signature_index=39
+ - 396 :  : name_index=132 signature_index=40
+ - 397 :  : name_index=249 signature_index=40
+ - 398 :  : name_index=250 signature_index=40
+ - 399 :  : name_index=251 signature_index=40
+ - 400 :  : name_index=252 signature_index=40
+ - 401 :  : name_index=268 signature_index=40
+ - 402 :  : name_index=146 signature_index=51
+ - 403 :  : name_index=74 signature_index=326
+ - 404 :  : name_index=138 signature_index=327
+ - 405 :  : name_index=45 signature_index=328
+ - 406 :  : name_index=273 signature_index=328
+ - 407 :  : name_index=272 signature_index=329
+ - 408 :  : name_index=62 signature_index=330
+ - 409 :  : name_index=129 signature_index=330
+ - 410 :  : name_index=253 signature_index=42
+ - 411 :  : name_index=36 signature_index=43
+ - 412 :  : name_index=44 signature_index=331
+ - 413 :  : name_index=269 signature_index=332
+ - 414 :  : name_index=188 signature_index=333
+ - 415 :  : name_index=181 signature_index=334
+ - 416 :  : name_index=180 signature_index=335
+ - 417 :  : name_index=203 signature_index=335
+ - 418 :  : name_index=107 signature_index=13
+ - 419 :  : name_index=99 signature_index=14
+ - 420 :  : name_index=100 signature_index=14
+ - 421 :  : name_index=111 signature_index=14
+ - 422 :  : name_index=114 signature_index=14
+ - 423 :  : name_index=115 signature_index=14
+ - 424 :  : name_index=116 signature_index=14
+ - 425 :  : name_index=117 signature_index=14
+ - 426 :  : name_index=118 signature_index=14
+ - 427 :  : name_index=119 signature_index=14
+ - 428 :  : name_index=126 signature_index=14
+ - 429 :  : name_index=224 signature_index=14
+ - 430 :  : name_index=98 signature_index=15
+ - 431 :  : name_index=35 signature_index=17
+ - 432 :  : name_index=57 signature_index=17
+ - 433 :  : name_index=76 signature_index=17
+ - 434 :  : name_index=81 signature_index=17
+ - 435 :  : name_index=133 signature_index=17
+ - 436 :  : name_index=135 signature_index=17
+ - 437 :  : name_index=136 signature_index=17
+ - 438 :  : name_index=184 signature_index=17
+ - 439 :  : name_index=185 signature_index=17
+ - 440 :  : name_index=194 signature_index=17
+ - 441 :  : name_index=198 signature_index=17
+ - 442 :  : name_index=223 signature_index=17
+ - 443 :  : name_index=261 signature_index=17
+ - 444 :  : name_index=262 signature_index=17
+ - 445 :  : name_index=263 signature_index=17
+ - 446 :  : name_index=265 signature_index=17
+ - 447 :  : name_index=82 signature_index=18
+ - 448 :  : name_index=139 signature_index=18
+ - 449 :  : name_index=140 signature_index=18
+ - 450 :  : name_index=141 signature_index=18
+ - 451 :  : name_index=142 signature_index=18
+ - 452 :  : name_index=144 signature_index=18
+ - 453 :  : name_index=145 signature_index=18
+ - 454 :  : name_index=146 signature_index=18
+ - 455 :  : name_index=149 signature_index=18
+ - 456 :  : name_index=150 signature_index=18
+ - 457 :  : name_index=151 signature_index=18
+ - 458 :  : name_index=152 signature_index=18
+ - 459 :  : name_index=222 signature_index=18
+ - 460 :  : name_index=91 signature_index=19
+ - 461 :  : name_index=216 signature_index=21
+ - 462 :  : name_index=216 signature_index=22
+ - 463 :  : name_index=143 signature_index=23
+ - 464 :  : name_index=214 signature_index=24
+ - 465 :  : name_index=207 signature_index=26
+ - 466 :  : name_index=55 signature_index=30
+ - 467 :  : name_index=204 signature_index=30
+ - 468 :  : name_index=205 signature_index=30
+ - 469 :  : name_index=209 signature_index=30
+ - 470 :  : name_index=217 signature_index=30
+ - 471 :  : name_index=218 signature_index=30
+ - 472 :  : name_index=266 signature_index=30
+ - 473 :  : name_index=201 signature_index=31
+ - 474 :  : name_index=213 signature_index=33
+ - 475 :  : name_index=206 signature_index=337
+ - 476 :  : name_index=89 signature_index=338
+ - 477 :  : name_index=35 signature_index=339
+ - 478 :  : name_index=199 signature_index=339
+ - 479 :  : name_index=183 signature_index=340
+ - 480 :  : name_index=182 signature_index=341
+ - 481 :  : name_index=106 signature_index=343
+ - 482 :  : name_index=95 signature_index=344
+ - 483 :  : name_index=210 signature_index=345
+ - 484 :  : name_index=96 signature_index=346
+ - 485 :  : name_index=187 signature_index=347
+ - 486 :  : name_index=192 signature_index=347
+ - 487 :  : name_index=92 signature_index=348
+ - 488 :  : name_index=97 signature_index=348
+ - 489 :  : name_index=148 signature_index=349
+ - 490 :  : name_index=93 signature_index=350
+ - 491 :  : name_index=94 signature_index=350
+ - 492 :  : name_index=110 signature_index=351
+ - 493 :  : name_index=104 signature_index=352
+ - 494 :  : name_index=87 signature_index=353
+ - 495 :  : name_index=102 signature_index=354
+ - 496 :  : name_index=137 signature_index=354
+ - 497 :  : name_index=264 signature_index=355
+ - 498 :  : name_index=90 signature_index=356
+ - 499 :  : name_index=112 signature_index=357
+ - 500 :  : name_index=208 signature_index=358
+ - 501 :  : name_index=220 signature_index=358
+ - 502 :  : name_index=121 signature_index=359
+ - 503 :  : name_index=134 signature_index=360
+ - 504 :  : name_index=35 signature_index=361
+ - 505 :  : name_index=124 signature_index=362
+ - 506 :  : name_index=270 signature_index=363
+ - 507 :  : name_index=271 signature_index=363
+ - 508 :  : name_index=108 signature_index=365
+ - 509 :  : name_index=113 signature_index=367
+ - 510 :  : name_index=120 signature_index=367
+ - 511 :  : name_index=123 signature_index=367
+ - 512 :  : name_index=83 signature_index=368
+ - 513 :  : name_index=195 signature_index=28
+ - 514 :  : name_index=125 signature_index=16
+ - 515 :  : name_index=257 signature_index=16
+ - 516 :  : name_index=35 signature_index=29
+ - 517 :  : name_index=56 signature_index=29
+ - 518 :  : name_index=79 signature_index=29
+ - 519 :  : name_index=80 signature_index=29
+ - 520 :  : name_index=68 signature_index=370
+ - 521 :  : name_index=101 signature_index=371
+ - 522 :  : name_index=88 signature_index=372
+ - 523 :  : name_index=127 signature_index=373
+ - 524 :  : name_index=85 signature_index=374
+ - 525 :  : name_index=65 signature_index=376
+ - 526 :  : name_index=196 signature_index=376
+ - 527 :  : name_index=72 signature_index=377
+ - 528 :  : name_index=190 signature_index=377
+ - 529 :  : name_index=35 signature_index=378
+ - 530 :  : name_index=70 signature_index=378
+ - 531 :  : name_index=258 signature_index=378
+ - 532 :  : name_index=35 signature_index=379
+ - 533 :  : name_index=69 signature_index=380
+ - 534 :  : name_index=212 signature_index=382
+ - 535 :  : name_index=86 signature_index=383
+ - 536 :  : name_index=112 signature_index=384
+ - 537 :  : name_index=109 signature_index=385
+ - 538 :  : name_index=66 signature_index=386
+ - 539 :  : name_index=83 signature_index=27
+ - 540 :  : name_index=78 signature_index=387
+ - 541 :  : name_index=68 signature_index=388
+ - 542 :  : name_index=254 signature_index=389
+ - 543 :  : name_index=73 signature_index=390
+ - 544 :  : name_index=105 signature_index=391
+ - 545 :  : name_index=64 signature_index=392
+ - 546 :  : name_index=195 signature_index=392
+ - 547 :  : name_index=193 signature_index=393
+ - 548 :  : name_index=103 signature_index=394
+ - 549 :  : klass_index=282 name_and_type_index=396
+ - 550 :  : klass_index=282 name_and_type_index=401
+ - 551 :  : klass_index=291 name_and_type_index=405
+ - 552 :  : klass_index=309 name_and_type_index=412
+ - 553 :  : klass_index=320 name_and_type_index=395
+ - 554 :  : klass_index=320 name_and_type_index=397
+ - 555 :  : klass_index=320 name_and_type_index=398
+ - 556 :  : klass_index=320 name_and_type_index=399
+ - 557 :  : klass_index=320 name_and_type_index=400
+ - 558 :  : klass_index=320 name_and_type_index=402
+ - 559 :  : klass_index=320 name_and_type_index=403
+ - 560 :  : klass_index=320 name_and_type_index=404
+ - 561 :  : klass_index=320 name_and_type_index=406
+ - 562 :  : klass_index=320 name_and_type_index=407
+ - 563 :  : klass_index=320 name_and_type_index=408
+ - 564 :  : klass_index=320 name_and_type_index=409
+ - 565 :  : klass_index=320 name_and_type_index=410
+ - 566 :  : klass_index=320 name_and_type_index=411
+ - 567 :  : klass_index=320 name_and_type_index=413
+ - 568 :  : klass_index=320 name_and_type_index=414
+ - 569 :  : klass_index=320 name_and_type_index=415
+ - 570 :  : klass_index=320 name_and_type_index=416
+ - 571 :  : klass_index=320 name_and_type_index=417
+ - 572 :  : klass_index=277 name_and_type_index=420
+ - 573 :  : klass_index=278 name_and_type_index=545
+ - 574 :  : klass_index=278 name_and_type_index=546
+ - 575 :  : klass_index=279 name_and_type_index=452
+ - 576 :  : klass_index=279 name_and_type_index=481
+ - 577 :  : klass_index=279 name_and_type_index=508
+ - 578 :  : klass_index=279 name_and_type_index=511
+ - 579 :  : klass_index=280 name_and_type_index=476
+ - 580 :  : klass_index=281 name_and_type_index=508
+ - 581 :  : klass_index=284 name_and_type_index=500
+ - 582 :  : klass_index=285 name_and_type_index=491
+ - 583 :  : klass_index=286 name_and_type_index=490
+ - 584 :  : klass_index=286 name_and_type_index=492
+ - 585 :  : klass_index=286 name_and_type_index=493
+ - 586 :  : klass_index=287 name_and_type_index=484
+ - 587 :  : klass_index=288 name_and_type_index=498
+ - 588 :  : klass_index=288 name_and_type_index=538
+ - 589 :  : klass_index=290 name_and_type_index=418
+ - 590 :  : klass_index=290 name_and_type_index=419
+ - 591 :  : klass_index=290 name_and_type_index=428
+ - 592 :  : klass_index=290 name_and_type_index=448
+ - 593 :  : klass_index=290 name_and_type_index=449
+ - 594 :  : klass_index=290 name_and_type_index=450
+ - 595 :  : klass_index=290 name_and_type_index=451
+ - 596 :  : klass_index=290 name_and_type_index=454
+ - 597 :  : klass_index=290 name_and_type_index=455
+ - 598 :  : klass_index=290 name_and_type_index=482
+ - 599 :  : klass_index=290 name_and_type_index=483
+ - 600 :  : klass_index=290 name_and_type_index=488
+ - 601 :  : klass_index=290 name_and_type_index=499
+ - 602 :  : klass_index=290 name_and_type_index=501
+ - 603 :  : klass_index=290 name_and_type_index=502
+ - 604 :  : klass_index=290 name_and_type_index=505
+ - 605 :  : klass_index=290 name_and_type_index=514
+ - 606 :  : klass_index=290 name_and_type_index=521
+ - 607 :  : klass_index=292 name_and_type_index=504
+ - 608 :  : klass_index=294 name_and_type_index=460
+ - 609 :  : klass_index=297 name_and_type_index=516
+ - 610 :  : klass_index=299 name_and_type_index=516
+ - 611 :  : klass_index=300 name_and_type_index=431
+ - 612 :  : klass_index=300 name_and_type_index=515
+ - 613 :  : klass_index=300 name_and_type_index=520
+ - 614 :  : klass_index=300 name_and_type_index=541
+ - 615 :  : klass_index=302 name_and_type_index=431
+ - 616 :  : klass_index=304 name_and_type_index=522
+ - 617 :  : klass_index=304 name_and_type_index=523
+ - 618 :  : klass_index=307 name_and_type_index=524
+ - 619 :  : klass_index=307 name_and_type_index=538
+ - 620 :  : klass_index=307 name_and_type_index=539
+ - 621 :  : klass_index=307 name_and_type_index=547
+ - 622 :  : klass_index=311 name_and_type_index=457
+ - 623 :  : klass_index=311 name_and_type_index=458
+ - 624 :  : klass_index=311 name_and_type_index=489
+ - 625 :  : klass_index=311 name_and_type_index=537
+ - 626 :  : klass_index=311 name_and_type_index=540
+ - 627 :  : klass_index=311 name_and_type_index=542
+ - 628 :  : klass_index=312 name_and_type_index=491
+ - 629 :  : klass_index=313 name_and_type_index=487
+ - 630 :  : klass_index=313 name_and_type_index=525
+ - 631 :  : klass_index=313 name_and_type_index=526
+ - 632 :  : klass_index=314 name_and_type_index=456
+ - 633 :  : klass_index=315 name_and_type_index=434
+ - 634 :  : klass_index=315 name_and_type_index=472
+ - 635 :  : klass_index=315 name_and_type_index=494
+ - 636 :  : klass_index=315 name_and_type_index=543
+ - 637 :  : klass_index=316 name_and_type_index=441
+ - 638 :  : klass_index=317 name_and_type_index=530
+ - 639 :  : klass_index=317 name_and_type_index=531
+ - 640 :  : klass_index=318 name_and_type_index=433
+ - 641 :  : klass_index=318 name_and_type_index=435
+ - 642 :  : klass_index=318 name_and_type_index=437
+ - 643 :  : klass_index=318 name_and_type_index=442
+ - 644 :  : klass_index=318 name_and_type_index=459
+ - 645 :  : klass_index=318 name_and_type_index=465
+ - 646 :  : klass_index=318 name_and_type_index=475
+ - 647 :  : klass_index=318 name_and_type_index=477
+ - 648 :  : klass_index=318 name_and_type_index=485
+ - 649 :  : klass_index=318 name_and_type_index=486
+ - 650 :  : klass_index=318 name_and_type_index=495
+ - 651 :  : klass_index=318 name_and_type_index=496
+ - 652 :  : klass_index=318 name_and_type_index=535
+ - 653 :  : klass_index=319 name_and_type_index=530
+ - 654 :  : klass_index=319 name_and_type_index=531
+ - 655 :  : klass_index=320 name_and_type_index=421
+ - 656 :  : klass_index=320 name_and_type_index=422
+ - 657 :  : klass_index=320 name_and_type_index=423
+ - 658 :  : klass_index=320 name_and_type_index=424
+ - 659 :  : klass_index=320 name_and_type_index=425
+ - 660 :  : klass_index=320 name_and_type_index=426
+ - 661 :  : klass_index=320 name_and_type_index=427
+ - 662 :  : klass_index=320 name_and_type_index=430
+ - 663 :  : klass_index=320 name_and_type_index=432
+ - 664 :  : klass_index=320 name_and_type_index=436
+ - 665 :  : klass_index=320 name_and_type_index=438
+ - 666 :  : klass_index=320 name_and_type_index=439
+ - 667 :  : klass_index=320 name_and_type_index=440
+ - 668 :  : klass_index=320 name_and_type_index=443
+ - 669 :  : klass_index=320 name_and_type_index=444
+ - 670 :  : klass_index=320 name_and_type_index=445
+ - 671 :  : klass_index=320 name_and_type_index=446
+ - 672 :  : klass_index=320 name_and_type_index=447
+ - 673 :  : klass_index=320 name_and_type_index=453
+ - 674 :  : klass_index=320 name_and_type_index=461
+ - 675 :  : klass_index=320 name_and_type_index=462
+ - 676 :  : klass_index=320 name_and_type_index=464
+ - 677 :  : klass_index=320 name_and_type_index=466
+ - 678 :  : klass_index=320 name_and_type_index=467
+ - 679 :  : klass_index=320 name_and_type_index=468
+ - 680 :  : klass_index=320 name_and_type_index=469
+ - 681 :  : klass_index=320 name_and_type_index=470
+ - 682 :  : klass_index=320 name_and_type_index=471
+ - 683 :  : klass_index=320 name_and_type_index=472
+ - 684 :  : klass_index=320 name_and_type_index=473
+ - 685 :  : klass_index=320 name_and_type_index=474
+ - 686 :  : klass_index=320 name_and_type_index=478
+ - 687 :  : klass_index=320 name_and_type_index=479
+ - 688 :  : klass_index=320 name_and_type_index=480
+ - 689 :  : klass_index=320 name_and_type_index=483
+ - 690 :  : klass_index=320 name_and_type_index=488
+ - 691 :  : klass_index=320 name_and_type_index=497
+ - 692 :  : klass_index=320 name_and_type_index=503
+ - 693 :  : klass_index=320 name_and_type_index=509
+ - 694 :  : klass_index=320 name_and_type_index=510
+ - 695 :  : klass_index=320 name_and_type_index=517
+ - 696 :  : klass_index=320 name_and_type_index=527
+ - 697 :  : klass_index=320 name_and_type_index=528
+ - 698 :  : klass_index=320 name_and_type_index=533
+ - 699 :  : klass_index=321 name_and_type_index=529
+ - 700 :  : klass_index=322 name_and_type_index=532
+ - 701 :  : klass_index=323 name_and_type_index=532
+ - 702 :  : klass_index=324 name_and_type_index=548
+ - 703 :  : klass_index=325 name_and_type_index=463
+ - 704 :  : klass_index=325 name_and_type_index=518
+ - 705 :  : klass_index=325 name_and_type_index=519
+ - 706 :  : klass_index=325 name_and_type_index=544
+ - 707 :  : klass_index=293 name_and_type_index=506
+ - 708 :  : klass_index=293 name_and_type_index=507
+ - 709 :  : klass_index=303 name_and_type_index=429
+ - 710 :  : klass_index=303 name_and_type_index=512
+ - 711 :  : klass_index=303 name_and_type_index=513
+ - 712 :  : klass_index=305 name_and_type_index=534
+ - 713 :  : klass_index=306 name_and_type_index=536
+ - 714 :  : 'ActiveWindowListener'
+ - 715 :  : 'Cause'
+ - 716 :  : 'ComponentAccessor'
+ - 717 :  : 'GuiDisposedListener'
+ - 718 :  : 'WindowAccessor'
+
+RDI=0x0000000020000020 is an unknown value
+R8 =0x000000000244d801 is an unknown value
+R9 =0x000000000254fcc0 is an unknown value
+R10=0x0000000000000000 is an unknown value
+R11=0x0000000000000000 is an unknown value
+R12=0x0000000000000000 is an unknown value
+R13=0x000000077cdadb88 is an oop
+{method} 
+ - klass: {other class}
+R14=0x000000000287e900 is pointing into the stack for thread: 0x000000000244d800
+R15=0x000000000244d800 is a thread
+
+
+Stack: [0x0000000002780000,0x0000000002880000],  sp=0x000000000287e878,  free space=1018k
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x000000000c604000 JavaThread "AWT-EventQueue-0" [_thread_in_vm, id=5384, stack(0x00000000101f0000,0x00000000102f0000)]
+  0x000000000c5ff800 JavaThread "AWT-Windows" daemon [_thread_in_native, id=9268, stack(0x000000000f250000,0x000000000f350000)]
+  0x000000000c5fe800 JavaThread "AWT-Shutdown" [_thread_blocked, id=8576, stack(0x000000000f0a0000,0x000000000f1a0000)]
+  0x000000000c5fe000 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=9260, stack(0x000000000edf0000,0x000000000eef0000)]
+  0x000000000c5b3800 JavaThread "TimerQueue" daemon [_thread_blocked, id=1240, stack(0x000000000ecf0000,0x000000000edf0000)]
+  0x000000000c504000 JavaThread "Thread-0" [_thread_in_native, id=2420, stack(0x000000000e480000,0x000000000e580000)]
+  0x000000000c4e8000 JavaThread "Service Thread" daemon [_thread_blocked, id=632, stack(0x000000000e090000,0x000000000e190000)]
+  0x000000000b55e000 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=3772, stack(0x000000000d3f0000,0x000000000d4f0000)]
+  0x000000000b556000 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=3016, stack(0x000000000de30000,0x000000000df30000)]
+  0x000000000b555000 JavaThread "Attach Listener" daemon [_thread_blocked, id=1116, stack(0x000000000dc40000,0x000000000dd40000)]
+  0x000000000b554000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=3332, stack(0x000000000daf0000,0x000000000dbf0000)]
+  0x000000000254d800 JavaThread "Finalizer" daemon [_thread_blocked, id=2568, stack(0x000000000d9c0000,0x000000000dac0000)]
+  0x000000000b540000 JavaThread "Reference Handler" daemon [_thread_blocked, id=9828, stack(0x000000000d7b0000,0x000000000d8b0000)]
+=>0x000000000244d800 JavaThread "main" [_thread_in_Java, id=1736, stack(0x0000000002780000,0x0000000002880000)]
+
+Other Threads:
+  0x000000000b53d000 VMThread [stack: 0x000000000d5c0000,0x000000000d6c0000] [id=7152]
+  0x000000000c501000 WatcherThread [stack: 0x000000000e280000,0x000000000e380000] [id=5564]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ PSYoungGen      total 38400K, used 4659K [0x00000007d5e00000, 0x00000007d8880000, 0x0000000800000000)
+  eden space 33280K, 14% used [0x00000007d5e00000,0x00000007d628cfa0,0x00000007d7e80000)
+  from space 5120K, 0% used [0x00000007d8380000,0x00000007d8380000,0x00000007d8880000)
+  to   space 5120K, 0% used [0x00000007d7e80000,0x00000007d7e80000,0x00000007d8380000)
+ ParOldGen       total 86016K, used 0K [0x0000000781a00000, 0x0000000786e00000, 0x00000007d5e00000)
+  object space 86016K, 0% used [0x0000000781a00000,0x0000000781a00000,0x0000000786e00000)
+ PSPermGen       total 21504K, used 5912K [0x000000077c800000, 0x000000077dd00000, 0x0000000781a00000)
+  object space 21504K, 27% used [0x000000077c800000,0x000000077cdc61d8,0x000000077dd00000)
+
+Card table byte_map: [0x0000000005880000,0x0000000005ca0000] byte_map_base: 0x0000000001c9c000
+
+Polling page: 0x0000000000120000
+
+Code Cache  [0x0000000002880000, 0x0000000002af0000, 0x0000000005880000)
+ total_blobs=293 nmethods=4 adapters=242 free_code_cache=48706Kb largest_free_block=49875008
+
+Compilation events (8 events):
+Event: 0.476 Thread 0x000000000b556000    1             java.lang.String::indexOf (70 bytes)
+Event: 0.478 Thread 0x000000000b55e000    2             java.lang.String::indexOf (166 bytes)
+Event: 0.482 Thread 0x000000000b556000 nmethod 1 0x00000000028e12d0 code [0x00000000028e1420, 0x00000000028e15c8]
+Event: 0.484 Thread 0x000000000b55e000 nmethod 2 0x00000000028e49d0 code [0x00000000028e4b20, 0x00000000028e4f58]
+Event: 0.487 Thread 0x000000000b556000    3             java.lang.String::charAt (29 bytes)
+Event: 0.487 Thread 0x000000000b556000 nmethod 3 0x00000000028e5190 code [0x00000000028e52c0, 0x00000000028e5378]
+Event: 0.493 Thread 0x000000000b55e000    4             java.lang.String::hashCode (55 bytes)
+Event: 0.495 Thread 0x000000000b55e000 nmethod 4 0x00000000028e4490 code [0x00000000028e45c0, 0x00000000028e4738]
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 0.479 Thread 0x000000000244d800 Threw 0x00000007d5e9b3a0 at C:\re\jdk7u51\527\hotspot\src\share\vm\prims\jvm.cpp:1244
+Event: 0.479 Thread 0x000000000244d800 Threw 0x00000007d5e9e088 at C:\re\jdk7u51\527\hotspot\src\share\vm\prims\jvm.cpp:1244
+Event: 0.479 Thread 0x000000000244d800 Threw 0x00000007d5ea0e10 at C:\re\jdk7u51\527\hotspot\src\share\vm\prims\jvm.cpp:1244
+Event: 0.480 Thread 0x000000000244d800 Threw 0x00000007d5ea3af8 at C:\re\jdk7u51\527\hotspot\src\share\vm\prims\jvm.cpp:1244
+Event: 0.480 Thread 0x000000000244d800 Threw 0x00000007d5f4cf48 at C:\re\jdk7u51\527\hotspot\src\share\vm\prims\jvm.cpp:1244
+Event: 0.489 Thread 0x000000000244d800 Threw 0x00000007d5f572c8 at C:\re\jdk7u51\527\hotspot\src\share\vm\prims\jni.cpp:717
+Event: 0.492 Thread 0x000000000244d800 Threw 0x00000007d5f5d398 at C:\re\jdk7u51\527\hotspot\src\share\vm\prims\jvm.cpp:1244
+Event: 0.492 Thread 0x000000000244d800 Threw 0x00000007d5f5f508 at C:\re\jdk7u51\527\hotspot\src\share\vm\prims\jvm.cpp:1244
+Event: 0.494 Thread 0x000000000244d800 Threw 0x00000007d5f62320 at C:\re\jdk7u51\527\hotspot\src\share\vm\prims\jvm.cpp:1244
+Event: 0.510 Thread 0x000000000244d800 Threw 0x00000007d5f7ce40 at C:\re\jdk7u51\527\hotspot\src\share\vm\prims\jni.cpp:717
+
+Events (10 events):
+Event: 0.545 loading class 0x000000000c58d090
+Event: 0.545 loading class 0x000000000c58d090 done
+Event: 0.545 loading class 0x000000000c517bf0
+Event: 0.545 loading class 0x000000000c5c21a0
+Event: 0.545 loading class 0x000000000c517bf0 done
+Event: 0.545 loading class 0x000000000c5c21a0 done
+Event: 0.545 loading class 0x000000000c5c21e0
+Event: 0.545 loading class 0x000000000c5c21e0 done
+Event: 0.545 loading class 0x000000000c505e00
+Event: 0.545 loading class 0x000000000c505e00 done
+
+
+Dynamic libraries:
+0x000000013f270000 - 0x000000013f2a3000 	C:\Program Files\Java\jre7\bin\javaw.exe
+0x0000000077390000 - 0x0000000077539000 	C:\Windows\SYSTEM32\ntdll.dll
+0x0000000077270000 - 0x000000007738f000 	C:\Windows\system32\kernel32.dll
+0x000007fefd2c0000 - 0x000007fefd32c000 	C:\Windows\system32\KERNELBASE.dll
+0x000007feff230000 - 0x000007feff30b000 	C:\Windows\system32\ADVAPI32.dll
+0x000007feff310000 - 0x000007feff3af000 	C:\Windows\system32\msvcrt.dll
+0x000007fefd600000 - 0x000007fefd61f000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007fefecf0000 - 0x000007fefee1d000 	C:\Windows\system32\RPCRT4.dll
+0x0000000077170000 - 0x000000007726a000 	C:\Windows\system32\USER32.dll
+0x000007feff590000 - 0x000007feff5f7000 	C:\Windows\system32\GDI32.dll
+0x000007fefdbd0000 - 0x000007fefdbde000 	C:\Windows\system32\LPK.dll
+0x000007fefebf0000 - 0x000007fefecb9000 	C:\Windows\system32\USP10.dll
+0x000007fefbb70000 - 0x000007fefbd64000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_fa396087175ac9ac\COMCTL32.dll
+0x000007fefd580000 - 0x000007fefd5f1000 	C:\Windows\system32\SHLWAPI.dll
+0x000007fefecc0000 - 0x000007fefecee000 	C:\Windows\system32\IMM32.DLL
+0x000007fefe970000 - 0x000007fefea79000 	C:\Windows\system32\MSCTF.dll
+0x000007fefd110000 - 0x000007fefd141000 	C:\Windows\system32\nvinitx.dll
+0x000000000f000000 - 0x000000000f006000 	C:\Program Files\NVIDIA Corporation\CoProcManager\detoured.dll
+0x000007fef9ad0000 - 0x000007fef9afd000 	C:\Program Files\NVIDIA Corporation\CoProcManager\nvd3d9wrapx.dll
+0x000007feff3b0000 - 0x000007feff587000 	C:\Windows\system32\SETUPAPI.dll
+0x000007fefd200000 - 0x000007fefd236000 	C:\Windows\system32\CFGMGR32.dll
+0x000007fefee20000 - 0x000007fefeef7000 	C:\Windows\system32\OLEAUT32.dll
+0x000007fefd6f0000 - 0x000007fefd8f3000 	C:\Windows\system32\ole32.dll
+0x000007fefd2a0000 - 0x000007fefd2ba000 	C:\Windows\system32\DEVOBJ.dll
+0x000007fef9a80000 - 0x000007fef9aa2000 	C:\Program Files\NVIDIA Corporation\CoProcManager\nvdxgiwrapx.dll
+0x000000005c870000 - 0x000000005c942000 	C:\Program Files\Java\jre7\bin\msvcr100.dll
+0x0000000077830000 - 0x0000000077ff9000 	C:\Program Files\Java\jre7\bin\server\jvm.dll
+0x000007fef2b70000 - 0x000007fef2b79000 	C:\Windows\system32\WSOCK32.dll
+0x000007fefd6a0000 - 0x000007fefd6ed000 	C:\Windows\system32\WS2_32.dll
+0x000007fefea80000 - 0x000007fefea88000 	C:\Windows\system32\NSI.dll
+0x000007fefb6d0000 - 0x000007fefb70b000 	C:\Windows\system32\WINMM.dll
+0x0000000077560000 - 0x0000000077567000 	C:\Windows\system32\PSAPI.DLL
+0x000000006e550000 - 0x000000006e55f000 	C:\Program Files\Java\jre7\bin\verify.dll
+0x00000000621f0000 - 0x0000000062218000 	C:\Program Files\Java\jre7\bin\java.dll
+0x0000000066cc0000 - 0x0000000066cd5000 	C:\Program Files\Java\jre7\bin\zip.dll
+0x000007fefa8d0000 - 0x000007fefa8e1000 	C:\Windows\xboxcontroller64.dll
+0x000007fefa8c0000 - 0x000007fefa8cc000 	C:\Windows\system32\XINPUT9_1_0.dll
+0x000007fefdbe0000 - 0x000007fefe968000 	C:\Windows\system32\SHELL32.dll
+0x000000006edc0000 - 0x000000006ee58000 	C:\Windows\system32\MSVCP100.dll
+0x000007fef2ff0000 - 0x000007fef306f000 	C:\Program Files\Common Files\microsoft shared\ink\tiptsf.dll
+0x000007fefb5e0000 - 0x000007fefb636000 	C:\Windows\system32\uxtheme.dll
+0x000007fefc200000 - 0x000007fefc20c000 	C:\Windows\system32\version.dll
+0x000007fefb300000 - 0x000007fefb318000 	C:\Windows\system32\dwmapi.dll
+0x000007fefd540000 - 0x000007fefd57a000 	C:\Windows\system32\WINTRUST.dll
+0x000007fefd3d0000 - 0x000007fefd53c000 	C:\Windows\system32\CRYPT32.dll
+0x000007fefd1f0000 - 0x000007fefd1ff000 	C:\Windows\system32\MSASN1.dll
+0x000000005b5c0000 - 0x000000005b755000 	C:\Program Files\Java\jre7\bin\awt.dll
+0x000007fefd040000 - 0x000007fefd04f000 	C:\Windows\system32\CRYPTBASE.dll
+0x000007feee3b0000 - 0x000007feee4d5000 	C:\Windows\system32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 
+java_command: packag.Main
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\HP SimplePass\x64;C:\Program Files (x86)\HP SimplePass\;;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Broadcom\Broadcom 802.11\Driver;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\Windows Live\Shared
+USERNAME=Rydge
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 Service Pack 1
+
+CPU:total 8 (4 cores per cpu, 2 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, erms, ht, tsc, tscinvbit, tscinv
+
+Memory: 4k page, physical 8281404k(4722572k free), swap 16560944k(12287592k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (24.51-b03) for windows-amd64 JRE (1.7.0_51-b13), built on Dec 18 2013 18:40:56 by "java_re" with unknown MS VC++:1600
+
+time: Thu May 22 15:25:04 2014
+elapsed time: 0 seconds
+
